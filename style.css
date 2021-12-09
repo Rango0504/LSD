@@ -1,0 +1,236 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+.toTop {
+    position: sticky;
+    width: 120px;
+    height: 120px;
+    padding: 20px;
+    bottom: 40px;
+    margin-left: 88%;
+    background-color: black;
+    border-radius: 50%;
+    opacity: 70%;
+    display: block;
+}
+html {
+    background-color: black;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+.logo {
+    width: 240px;
+    margin: auto;
+}
+.popUp {
+    display: flex;
+    position: absolute;
+    z-index: 20;
+    width: 100%;
+    margin: auto;
+    background-color: grey;
+}
+.popUpContent {
+    background-color: white;
+    width: 80%;
+}
+.popUpText {
+    color: black;
+}
+.contact {
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+}
+.contactImg {
+    margin-right: 30px;
+    height: 60px;
+    vertical-align: middle;
+}
+.contactContent {
+    font-size: 74px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+.contactHeader{
+    font-size: 50px;
+    text-shadow: 3px 3px black;
+}
+.callToAction {
+    display: block;
+    background-color: #d42b72;
+    width: 400px;
+    padding: 10px;
+    margin: auto;
+    z-index: 10;
+}
+.marginb{
+    margin-bottom: 20px;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 20px;
+}
+nav {
+    margin-right: 40px;
+}
+.navitem {
+    display: inline-block;
+    padding: 8px;
+    margin-top: 60px;
+}
+.svgimg {
+    width: 28px;
+    margin-left: 20px;
+}
+h1 {
+    font-size: 40px;
+    color: #269CDE;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#faq h1 {
+    margin-bottom: 0;
+}
+h4 {
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 50px;
+}
+h5 {
+    margin-top: 0;
+    margin-bottom: 30;
+    font-weight: normal;
+}
+.faqEl{
+    color: #d42b72;
+}
+.check {
+    list-style-image: url(/imgs/check.png);
+}
+.cogs {
+    list-style-image: url(/imgs/cogs.png);
+}
+li {
+    text-align: left;
+    margin-left: 13%;
+    /* color: #D31515; */
+}
+#top {
+    background-color: black;
+    padding: 100px;
+}
+.back2{
+    background-image: url(backimgs/backimg2.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+.back3{
+    background-image: url(backimgs/backimg3.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+.back4{
+    background-image: url(backimgs/backimg4.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+.back5{
+    background-image: url(backimgs/backimg5.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+#offer {
+    background-color: black;
+    padding: 100px;
+}
+#gallery {
+    background-color: black;
+    padding: 100px;
+}
+.zdj {
+    display: inline-block;
+}
+.zdj img {
+    margin: 30px;
+    border-radius: 2%;
+}
+.zdjs {
+    opacity: 0;
+    transition: 1.5s;
+    height: 0;
+}
+.zdjs img {
+    margin: 30px;
+    border-radius: 2%;
+    display: inline-block;
+}
+ #show {
+    color: #269CDE;
+    width: 180px;
+    background: black;
+    border: none;
+    border-bottom: 3px solid #269CDE;
+}
+#faq {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: block;
+}
+.faqAnswer {
+    opacity: 0;
+    transition: 1.5s;
+    max-width: 75%;
+    height: 0;
+    pointer-events: none;
+    /* color: #d42b72; */
+}
+.faqQuestion {
+    text-align: left;
+    color: #d42b72;
+}
+.submitButton{
+    display: block;
+    width: 80px;
+    align-self: center;
+    width: 550px;
+    padding: 12px;
+    background-color: #d42b72;
+    z-index: 100;
+}
+.contactInfo {
+    border-top: 10px solid #269CDE;
+    margin-bottom: 50px;
+}
+@media (max-width:1600px){
+    * {
+        font-size: 20px;
+    }
+    .contactContent{
+        font-size: 30px;
+        
+    }
+    .contact{
+        margin-top: 55px;
+    }
+    .contactImg{
+        width: 60px;
+    }
+} 
