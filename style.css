@@ -23,23 +23,7 @@ html {
     overflow-x: hidden;
 }
 .logo {
-    width: 240px;
     margin: auto;
-}
-.popUp {
-    display: flex;
-    position: absolute;
-    z-index: 20;
-    width: 100%;
-    margin: auto;
-    background-color: grey;
-}
-.popUpContent {
-    background-color: white;
-    width: 80%;
-}
-.popUpText {
-    color: black;
 }
 .contact {
     margin-top: 20%;
@@ -78,6 +62,14 @@ html {
     justify-content: space-between;
     background-color: black;
     padding: 20px;
+    position: fixed;
+    width: 99%;
+    margin: 0;
+    z-index: 30;
+    top: 0;
+}
+.flex img {
+    height: 100px;
 }
 nav {
     margin-right: 40px;
@@ -85,7 +77,8 @@ nav {
 .navitem {
     display: inline-block;
     padding: 8px;
-    margin-top: 60px;
+    vertical-align: top;
+    margin-top: 30px;
 }
 .svgimg {
     width: 28px;
@@ -171,6 +164,7 @@ li {
 .zdj img {
     margin: 30px;
     border-radius: 2%;
+    max-width: 27%;
 }
 .zdjs {
     opacity: 0;
@@ -181,6 +175,7 @@ li {
     margin: 30px;
     border-radius: 2%;
     display: inline-block;
+    max-width: 25%;
 }
  #show {
     color: #269CDE;
@@ -213,24 +208,110 @@ li {
     width: 550px;
     padding: 12px;
     background-color: #d42b72;
-    z-index: 100;
+    z-index: 20;
 }
 .contactInfo {
     border-top: 10px solid #269CDE;
     margin-bottom: 50px;
 }
-@media (max-width:1600px){
+@media (max-width:1400px){
     * {
-        font-size: 20px;
+        font-size: 18px;
     }
     .contactContent{
         font-size: 30px;
         
     }
     .contact{
-        margin-top: 55px;
+        margin-top: 150px;
     }
     .contactImg{
         width: 60px;
     }
+    .zdj img {
+        max-width: 25%;
+    }
+    .zdjs img {
+        max-width: 25%;
+    }
+    .logo {
+        width: 150px;
+    }
+    .contactHeader {
+        font-size: 30px;
+    }
+    .submitButton {
+        width: auto;
+    }
+    #top {
+        padding: 100px 10px;
+    }
+    #offer {
+        padding: 100px 10px;
+    }
+    #gallery {
+        padding: 100px 10px;
+    }
 } 
+@media (max-width:400px) {
+    .flex{
+        display: none;
+    }
+    .submitButton {
+        width: auto;
+    }
+    .contact {
+        width: auto;
+    }
+    .contactHeader {
+        margin-top: 0;
+    }
+    .mobileNav {
+        display: block;
+        position: fixed;
+        background-color: black;
+        width: 100%;
+        z-index: 50;
+        top: 0;
+        left: 0;
+    }
+    .zdj img {
+        margin: 10px;
+    }
+    .zdjs img {
+        margin: 10px;
+    }
+    .zdjs:first-child{
+        padding-top: 30px;
+    }
+    nav {
+        margin: 0;
+    }
+    .mobileNav img {
+        margin: 30px 0;
+    }
+    video {
+        margin-top: 150px;
+    }
+    .toTop {
+        margin-left: 30%;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .logo {
+        width: 90px;
+    }
+    #top {
+        padding: 50px 10px;
+    }
+    #offer {
+        padding: 50px 10px;
+    }
+    #gallery {
+        padding: 50px 10px;
+    }
+    #faq {
+        padding: 50px 10px;
+    }
+}
