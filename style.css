@@ -108,10 +108,10 @@ h5 {
     color: #d42b72;
 }
 .check {
-    list-style-image: url(/imgs/check.png);
+    list-style-image: url(imgs/check.png);
 }
 .cogs {
-    list-style-image: url(/imgs/cogs.png);
+    list-style-image: url(imgs/cogs.png);
 }
 li {
     text-align: left;
